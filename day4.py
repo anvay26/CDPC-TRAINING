@@ -62,7 +62,8 @@
 # print(ls[::-1])  #reverse the array (slicing technique)
 
 # string
-s="Anvay"
-print(s[2:4])
-rev=s[::-1]
-print(rev)
+# s="Anvay"
+# print(s[2:4])
+# rev=s[::-1]
+
+# print(rev)
