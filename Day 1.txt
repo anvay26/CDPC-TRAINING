@@ -1,0 +1,190 @@
+# Algorithms and Data Structures
+
+## Python Code Example
+
+```python
+no=int(input("Enter any value: "))
+
+n1=no%10    # Extracts last digit
+no=no//10   # Removes last digit
+n2=no%10    # Extracts next digit
+n3=no//10   # Extracts remaining digit
+rev=n1*100+n2*10+n3*1
+print(res)  # (Should be rev)
+
+Algorithm
+
+An algorithm is a sequence of well-defined steps that are followed to solve a particular problem or perform a computation in a program.
+
+Data Structures
+
+A data structure refers to a technique used to organize and store data in a computer so that it can be accessed and processed efficiently.
+
+Types of Data Structures
+
+Data structures are generally divided into two main categories.
+
+1. Primitive Data Structures
+
+These are the basic built-in data types used in programming, such as:
+
+Integer
+
+Float
+
+Character
+
+String
+
+Boolean
+
+2. Non-Primitive Data Structures
+
+These structures store collections of data and are divided further into two types.
+
+Linear Data Structures
+
+In linear structures, elements are arranged sequentially.
+
+Examples:
+
+Arrays (Static)
+
+Linked Lists
+
+Stacks
+
+Queues
+
+Non-Linear Data Structures
+
+In these structures, elements are not arranged sequentially but in hierarchical or interconnected ways.
+
+Examples:
+
+Trees
+
+Graphs
+
+Big O Notation
+
+Big O notation is used to represent the efficiency of an algorithm, especially when the input size becomes very large. It helps programmers understand how the performance of an algorithm changes as the data size increases.
+
+For example, an algorithm that works well for 10 records might behave very differently for 1,000,000 records.
+
+Types of Complexity
+1. Time Complexity
+
+Time complexity describes how long a program takes to execute depending on the size of the input.
+
+Example:
+
+Program A finishes in 30 seconds
+
+Program B finishes in 60 seconds
+
+Program A is more efficient.
+
+2. Space Complexity
+
+Space complexity measures the amount of memory used by an algorithm during execution.
+
+Performance Scenarios
+
+Algorithms are usually evaluated in three cases:
+
+Best Case
+
+The situation where the algorithm performs with the minimum possible time.
+
+Average Case
+
+The expected running time for typical inputs.
+
+Worst Case
+
+The maximum time an algorithm might take to finish.
+
+A common analogy is vehicle fuel consumption:
+
+Highway driving → Best case
+
+Normal road conditions → Average case
+
+Heavy city traffic → Worst case
+
+Common Complexity Notations
+
+Some commonly used complexity expressions are:
+
+O(n) → Linear complexity
+
+O(n²) → Quadratic complexity
+
+O(2ⁿ) → Exponential complexity
+
+Other related mathematical notations include:
+
+Big Omega (Ω) – Represents the best-case performance
+
+Big Theta (Θ) – Represents the exact or tight bound
+
+Rules for Calculating Complexity
+Rule 1: Constant Operations
+
+Statements such as assignments or a single if condition that run once have O(1) complexity.
+
+Example : x = 5
+if x > 2:
+    print(x)
+Rule 2: Single Loop
+
+A loop running from 0 to n executes n times.
+
+Complexity → O(n)
+
+Example
+
+for i in range(n):
+    print(i)
+Rule 3: Nested Loops
+
+When a loop runs inside another loop of the same size, the complexity becomes O(n²).
+
+Example
+
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+Rule 4: Logarithmic Loop
+
+If the loop variable is divided by 2 each time, the complexity becomes O(log n).
+
+Example
+
+while n > 1:
+    n = n // 2
+    print(n)
+Rule 5: Multiple Statements
+
+If several independent operations exist, their complexities are added together.
+
+Example
+
+for i in range(n):
+    print(i)
+
+for j in range(n):
+    print(j)
+
+Overall complexity → O(n + n) = O(n)
+
+Example: Grid Iteration Complexity
+
+When two loops iterate over a grid of height (h) and width (w), the total number of operations becomes h × w.
+
+Example
+
+for i in range(h):
+    for j in range(w):
+        print(i, j)
